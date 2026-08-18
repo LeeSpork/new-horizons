@@ -33,11 +33,8 @@
       }
     },
     "AchievementTranslations": {
-      "type": "object",
       "description": "Translation table for achievements. The key is the unique ID of the achievement",
-      "additionalProperties": {
-        "$ref": "#/definitions/AchievementTranslationInfo"
-      }
+      "$ref": "#/definitions/AchievementTranslationInfo"
     },
     "$schema": {
       "type": "string",
