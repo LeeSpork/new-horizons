@@ -79,6 +79,7 @@ namespace NewHorizons.External.Modules.Props
         /// Also makes this detail visible on the map.
         /// Keeping many props loaded is bad for performance so use this only when it's actually relevant
         /// Most logic/behavior scripts will still only work inside the sector, as most of those scripts break if a sector is not provided.
+        /// If you are using parentPath to parent this prop to another, the parent prop should also have keepLoaded set for this to take effect.
         /// </summary>
         public bool keepLoaded;
 
