@@ -31,15 +31,15 @@
                 <xs:annotation>
                     <xs:documentation>
                         The id of this text block. The first text block should have an id of `1`.
-                        For Nomai recorders and computers, ids of following text blocks should be sequential.
+                        For Nomai recorders and computers, ids must be sequential.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
             <xs:element name="ParentID" type="xs:positiveInteger" minOccurs="0" maxOccurs="1">
                 <xs:annotation>
                     <xs:documentation>
-                        The id of the text block that this one branches off of.
-                        Should be omited on text block 1.
+                        The id of the text block that this one branches off of, if this is not the first text block.
+                        Not needed for recorders and computers.
                     </xs:documentation>
                 </xs:annotation>
             </xs:element>
